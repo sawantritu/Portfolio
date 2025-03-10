@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataAlchemy by Kanchan : Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Chart.js for Graphs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- GSAP for Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #1a1a1a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(45deg, #ff7f50, #ff4500);
+      padding: 50px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: white;
+    }
+
+    .intro-text {
+      font-size: 1.2em;
+      color: #eee;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .chart-container {
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+      max-width: 900px;
+    }
+
+    .portfolio-section {
+      background-color: #2c2c2c;
+      padding: 50px 20px;
+    }
+
+    .portfolio-section h2 {
+      color: #ff7f50;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-section p {
+      color: #bbb;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .skills .skill, .projects .project {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .skills .skill:hover, .projects .project:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background-color: #2c2c2c;
+      padding: 20px;
+      text-align: center;
+      color: #bbb;
+    }
+
+    .contact {
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Animation for header */
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff7f50;
+      }
+      100% {
+        text-shadow: 0 0 10px #ff4500, 0 0 20px #ff7f50, 0 0 30px #ff4500;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>DataAlchemy by Kanchan : Portfolio</h1>
+    <p class="intro-text">Empowering businesses with data science, interactive visualizations, and predictive intelligence.</p>
+  </header>
+
+  <!-- Main Section with Graph -->
+  <section class="section" id="data-viz">
+    <h2>Interactive Data Visualization</h2>
+    <p class="intro-text">Check out my data-driven insights through visualized graphs and charts, using state-of-the-art analytical techniques.</p>
+
+    <div class="chart-container">
+      <canvas id="myBarChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <div class="portfolio-section" id="about-me">
+    <h2>About Me</h2>
+    <p>
+      Data is a powerful tool for shaping smarter business decisions and driving innovation. With an M.Sc. in Data Science (Distinction) from Nottingham Trent University and an M.Sc. in Information Technology from the University of Mumbai, I have built a strong foundation in data analysis, engineering, and problem-solving.
+    </p>
+    <p>
+      With over seven years of experience across diverse industries including logistics, FMCG, consulting, and technology, I have developed a deep understanding of transforming complex datasets into actionable insights. My roles at TCS and Course5 Intelligence involved optimizing data workflows, building predictive models, and creating data-driven solutions to improve business performance. Currently, at Maersk, I focus on managing large-scale databases, automating processes, and enhancing operational efficiency.
+    </p>
+    <p>
+      Proficient in Python, SQL, Power BI, and cloud platforms, I am passionate about applying data science and automation to solve real-world challenges. Always looking for new ways to leverage data for innovation, I thrive in dynamic environments where impactful decisions are driven by data.
+    </p>
+    <p>
+      Let’s connect and explore how data can unlock new possibilities and drive business success!
+    </p>
+  </div>
+
+  <!-- Portfolio Section -->
+    <div class="portfolio-section" id="Keywords">
+      <h2>Keywords</h2>
+</h4> Technical Skills:</h4> <p>Python, R, SQL, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, TensorFlow, PyTorch, Keras, Plotly, dplyr, ggplot2, Data Wrangling, Data Cleaning, ETL (Extract, Transform, Load), Hadoop, Spark, NoSQL, MongoDB, Cassandra, Machine Learning, Supervised Learning, Unsupervised Learning, Reinforcement Learning, Deep Learning, Neural Networks, Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Natural Language Processing (NLP), Model Evaluation, Hyperparameter Tuning, Model Deployment, Flask, Docker, Kubernetes, Cloud Computing (AWS, Azure, Google Cloud) .</p>
+</h4>  Mathematics & Statistics:</h4>      <p>Linear Algebra, Probability Theory, Statistics, Hypothesis Testing, p-value, A/B Testing, Optimization Techniques.</p>
+</h4>  Business Acumen & Communication:</h4>  <p>Problem Solving, Data Visualization, Business Intelligence, Tableau, Power BI, Data Storytelling, Stakeholder Communication, Data-Driven Decisions.</p>
+</h4>  Version Control & Tools:</h4> <p> Git, GitHub, GitLab, Version Control</p>
+</h4>   Big Data & Distributed Computing:</h4> <p>Apache Kafka, Apache Flink, Data Lakes, Big Data</p>
+</h4>   Model Management:</h4> <p>MLflow, DVC (Data Version Control), Kubeflow</p>
+</h4>   Advanced Topics:</h4> <p>Time Series Analysis, Reinforcement Learning, Graph Databases (Neo4j), Bayesian Inference</p>
+
+ </div>
+
+
+  <!-- Skills Section -->
+  <section class="portfolio-section" id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Python</h3>
+        <p>Advanced programming for data manipulation, analysis, and machine learning applications.</p>
+      </div>
+      <div class="skill">
+        <h3>Machine Learning</h3>
+        <p>Building predictive models using algorithms like Linear Regression, Decision Trees, and Neural Networks.</p>
+      </div>
+      <div class="skill">
+        <h3>Data Visualization</h3>
+        <p>Creating interactive dashboards and visualizations using tools like Matplotlib, Seaborn, and PowerBI.</p>
+      </div>
+      <div class="skill">
+        <h3>SQL & Databases</h3>
+        <p>Proficient in querying and managing large datasets using SQL in relational databases like MySQL.</p>
+      </div>
+      <div class="skill">
+        <h3>Big Data</h3>
+        <p>Handling big data using tools like Hadoop, Spark, and cloud technologies like AWS and Google Cloud.</p>
+      </div>
+      <div class="skill">
+        <h3>Deep Learning</h3>
+        <p>Working with neural networks for applications in image recognition, NLP, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="portfolio-section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Predictive Analytics on Stock Prices (Under Construction)</h3>
+        <p>Used machine learning algorithms to predict stock prices based on historical data and market indicators.</p>
+      </div>
+      <div class="project">
+        <h3>Customer Segmentation using K-means (Under Construction)</h3>
+        <p>Segmented customers based on purchasing behavior to target personalized marketing campaigns.</p>
+      </div>
+      <div class="project">
+        <h3>Image Classification with CNN (Under Construction)</h3>
+        <p>Built a Convolutional Neural Network model to classify images from a dataset of animals.</p>
+      </div>
+      <div class="project">
+        <h3>Sales Forecasting with Time Series (Under Construction)</h3>
+        <p>Developed a time-series model to predict sales for the upcoming quarters using ARIMA.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>&copy; 2025 Data Scientist Portfolio. All rights reserved.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:email@example.com">sawantritu12@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ritu-kanchan-sawant-96a919104?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2Bk26HqJKQnqw1U47VfUlcw%3D%3D" target="_blank">linkedin.com/in/your-linkedin</a></p>
+  </section>
+
+  <!-- Script for Bar Chart & Animations -->
+  <script>
+    // GSAP Animations
+    gsap.from("header h1", { opacity: 0, scale: 0.5, duration: 1, delay: 0.5 });
+    gsap.from("header .intro-text", { opacity: 0, y: -20, duration: 1, delay: 1 });
+
+    // Fade-in effect for sections (removed for graph section)
+    window.addEventListener('scroll', function () {
+      const sections = document.querySelectorAll('.section:not(#data-viz)'); // Excluding graph section
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8) {
+          section.classList.add('visible');
+        }
+      });
+    });
+
+    // Chart.js Data (Bar Chart without Animation)
+    const ctx = document.getElementById('myBarChart').getContext('2d');
+    const myBarChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        datasets: [{
+          label: 'Growth of Success (%)',
+          data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100],
+          backgroundColor: 'rgba(255, 69, 0, 0.6)',
+          borderColor: 'rgba(255, 69, 0, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 0, // No animation
+        },
+        plugins: {
+          legend: {
+            labels: {
+              font: {
+                family: 'Roboto',
+                weight: '700',
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              color: '#fff', // Axis tick color
+            }
+          },
+          x: {
+            ticks: {
+              color: '#fff', // Axis tick color
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
